@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-header">
+    <h3>DETALLES ALUMNOS</h3>
+  </div>
+  <div class="card-body ">
+    <h5>{{ alumno.nombre }}</h5>
+    <p>Edad: {{ alumno.edad }}</p>
+    <p>Curso: {{ alumno.grado }}</p>
+    <p>Media: {{ alumno.media }}</p>
+
+    <br />
+    <a [routerLink]="['/']" class="btn btn-success">Atrás</a>
+  </div>
+</div>

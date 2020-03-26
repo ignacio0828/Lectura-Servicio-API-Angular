@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <th>NOMBRE</th>
+    <th>APELLIDOS</th>
+    <th>CURSO</th>
+    <th>EDAD</th>
+    <th>DETALLES</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let alum of alumnos">
+      <td>{{ alum.nombre }}</td>
+      <td>{{ alum.apellidos }}</td>
+      <td>{{ alum.grado }}</td>
+      <td>{{ alum.edad }}</td>
+      <td>
+        <a [routerLink]="['detallesalumno', alum.codigo]">Detalles</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
